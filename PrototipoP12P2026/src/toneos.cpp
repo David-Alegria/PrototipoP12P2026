@@ -11,7 +11,7 @@ int toneos::generarAleatorio(int min, int max)
     return min + rand() % (max - min +1);
 }
 
-void toneos::llenarMatriz()
+void toneos::llenarMatriz()//cambio de nombres de goles a puntos
 {
     for (int i = 0; i < Numero_Equipos; i++)
     {
@@ -20,15 +20,15 @@ void toneos::llenarMatriz()
         for (int j = 0; j < Numero_Partidos; j++)
         {
             int puntos = generarAleatorio(Min_puntos, Max_puntos);
-            matriz[i][j] = goles;
-            suma += goles;
+            matriz[i][j] = puntos;
+            suma += puntos;
         }
 
         matriz[i][Numero_Partidos] = suma;
     }
 }
 
-void ImprimirMatriz::linea()
+void toneos::linea()//Cambio de todos los nombres a toneos
 {
     cout << "+---------";
     for (int i = 0; i < Numero_Partidos + 1; i++)
@@ -38,7 +38,7 @@ void ImprimirMatriz::linea()
     cout << "+\n";
 }
 
-float ImprimirMatriz::imprimir()
+float toneos::imprimir()
 {
     float mayor = matriz[0][Numero_Partidos];
     float menor = matriz[0][Numero_Partidos];
