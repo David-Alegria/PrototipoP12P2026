@@ -51,13 +51,13 @@
 
 1775490280 c:\users\david\documents\programacion-1\tareas progra\matriceslibrerias\matricestorneodefutbol\include\torneo.h
 
-1775606903 source:c:\users\david\documents\programacion-1\prototipop12p2026\matriceslibrerias\matricestorneodefutbol\main.cpp
+1776271400 source:c:\users\david\documents\programacion-1\prototipop12p2026\matriceslibrerias\matricestorneodefutbol\main.cpp
 	<iostream>
 	"imprimirmatriz.h"
 	<cstdlib>
 	<ctime>
 
-1776270872 c:\users\david\documents\programacion-1\prototipop12p2026\matriceslibrerias\matricestorneodefutbol\include\imprimirmatriz.h
+1776271401 c:\users\david\documents\programacion-1\prototipop12p2026\matriceslibrerias\matricestorneodefutbol\include\imprimirmatriz.h
 	<iostream>
 	<iomanip>
 	<cstring>
@@ -68,7 +68,7 @@
 
 1775490301 c:\users\david\documents\programacion-1\prototipop12p2026\matriceslibrerias\matricestorneodefutbol\include\equipos.h
 
-1775659766 source:c:\users\david\documents\programacion-1\prototipop12p2026\matriceslibrerias\matricestorneodefutbol\src\imprimirmatriz.cpp
+1776271403 source:c:\users\david\documents\programacion-1\prototipop12p2026\matriceslibrerias\matricestorneodefutbol\src\imprimirmatriz.cpp
 	"imprimirmatriz.h"
 	<cstdlib>
 

@@ -1,4 +1,4 @@
-#include "imprimirmatriz.h"
+#include "imprimirmatriz.h" //David Emanuel Alegria Cap 9959-23-11277
 #include <cstdlib>
 
 ImprimirMatriz::ImprimirMatriz(string nombre)
@@ -19,9 +19,9 @@ void ImprimirMatriz::llenarMatriz()
 
         for (int j = 0; j < Numero_Partidos; j++)
         {
-            int goles = generarAleatorio(Min_Goles, Max_Goles);
-            matriz[i][j] = goles;
-            suma += goles;
+            int puntos = generarAleatorio(Min_puntos, Max_puntos);
+            matriz[i][j] = puntos;
+            suma += puntos;
         }
 
         matriz[i][Numero_Partidos] = suma;
@@ -92,9 +92,10 @@ float ImprimirMatriz::imprimir()
 
     float promedio = totalGeneral / Numero_Equipos;
 
-    cout << "El equipo con mayor goles fue: " << equipoMayor << " " << mayor << endl;
-    cout << "El equipo con menor goles fue: " << equipoMenor << " " << menor << endl;
-    cout << "El promedio de goles fue: " << promedio << endl << endl;
+    cout << "El equipo con mayor puntos fue: " << equipoMayor << " " << mayor << endl;
+    cout << "El equipo con menor puntos fue: " << equipoMenor << " " << menor << endl;
+    cout << "El promedio de puntos fue : " << promedio << endl << endl;
+
 
     return promedio;
 }
