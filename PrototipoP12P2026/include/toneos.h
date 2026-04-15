@@ -11,7 +11,7 @@ using namespace std;
 
 class toneos
 {
-private:
+private://Cambio de nombres de equipos de la liga
     float matriz[Numero_Equipos][Numero_Partidos + 1];
 
     char Equipos[Numero_Equipos][Maxima_Longitud_Cadena]={
