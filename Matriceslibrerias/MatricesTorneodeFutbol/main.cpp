@@ -1,5 +1,5 @@
 #include <iostream>
-#include "toneos.h"
+#include "imprimirmatriz.h"
 #include <cstdlib>
 #include <ctime>
 using namespace std;
@@ -15,11 +15,11 @@ int main()
 
     do
     {
-        system("cls");//Cambio de nombres de ligas
+        system("cls");
 
-        toneos g1("Liga española año 2021");
-        toneosg2("Liga española año 2022");
-        toneos g3("Liga española  año 2023");
+        ImprimirMatriz g1("Grupo A");
+        ImprimirMatriz g2("Grupo B");
+        ImprimirMatriz g3("Grupo C");
 
         float r1, r2, r3;
 
@@ -33,11 +33,11 @@ int main()
         r3 = g3.imprimir();
 
         if (r1 > r2 && r1 > r3)
-            cout <<"El grupo con mas puntos  fue A\n";
+            cout <<"El grupo conmas goles fue A\n";
         else if (r2 > r1 && r2 > r3)
-            cout <<"El grupo con mas puntos fue B\n";
+            cout <<"El grupo con mas goles fue B\n";
         else if (r3 > r1 && r3 > r2)
-            cout << "El grupo con mas puntos fue C\n";
+            cout << "El grupo con mas goles fue C\n";
         else
             cout <<"Tenemos empate\n";
 

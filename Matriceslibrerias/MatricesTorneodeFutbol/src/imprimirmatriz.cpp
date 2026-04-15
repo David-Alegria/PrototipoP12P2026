@@ -1,17 +1,17 @@
-#include "toneos.h"
+#include "imprimirmatriz.h"
 #include <cstdlib>
 
-toneos::toneos(string nombre)//Cambio de nombre a toneos
+ImprimirMatriz::ImprimirMatriz(string nombre)
 {
     nombreGrupo = nombre;
 }
 
-int toneos::generarAleatorio(int min, int max)
+int ImprimirMatriz::generarAleatorio(int min, int max)
 {
     return min + rand() % (max - min +1);
 }
 
-void toneos::llenarMatriz()//cambio de nombres de goles a puntos
+void ImprimirMatriz::llenarMatriz()
 {
     for (int i = 0; i < Numero_Equipos; i++)
     {
@@ -19,16 +19,16 @@ void toneos::llenarMatriz()//cambio de nombres de goles a puntos
 
         for (int j = 0; j < Numero_Partidos; j++)
         {
-            int puntos = generarAleatorio(Min_puntos, Max_puntos);
-            matriz[i][j] = puntos;
-            suma += puntos;
+            int goles = generarAleatorio(Min_Goles, Max_Goles);
+            matriz[i][j] = goles;
+            suma += goles;
         }
 
         matriz[i][Numero_Partidos] = suma;
     }
 }
 
-void toneos::linea()//Cambio de todos los nombres a toneos
+void ImprimirMatriz::linea()
 {
     cout << "+---------";
     for (int i = 0; i < Numero_Partidos + 1; i++)
@@ -38,7 +38,7 @@ void toneos::linea()//Cambio de todos los nombres a toneos
     cout << "+\n";
 }
 
-float toneos::imprimir()
+float ImprimirMatriz::imprimir()
 {
     float mayor = matriz[0][Numero_Partidos];
     float menor = matriz[0][Numero_Partidos];
